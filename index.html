@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Gabriela|Bungee+Shade" rel="stylesheet">
+
+<style>
+    header{
+        background-size: cover;
+       
+    
+        background-image: url(http://previews.123rf.com/images/bphoto/bphoto1212/bphoto121200013/16999621-Set-vector-icons-electronics-and-gadgets-Signs-can-be-used-as-buttons-for-web-design-and-for-other-p-Stock-Photo.jpg)
+          
+    }
+    body {
+      font-family: gabriela,sans-serif;
+      margin: 0 auto;
+      max-width: 600px;
+      background: #00001a;
+    }
+    div {
+      height: 250px;
+      background-size: cover;
+      position: relative;
+      margin: 30px 0 0 0;
+      border-radius: 15px;
+    }
+    a{
+      color: antiquewhite;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.8);
+    
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+     
+    }
+    h1{
+        
+        font-family:bungee shade;
+        font-size: 100px;
+        color:black;
+        margin: 50px 0 0 0;
+        text-align: center;
+    }
+    h2{
+        font-family: Gloria Hallelujah;
+        margin: -75px 0 0 70px;
+        text-align: right;
+        
+    }
+    p{
+       
+        background-color: #000000 ;
+        color:aliceblue;
+        background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.5));
+        background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,0.5));
+        background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.5));
+        padding: 10px;
+        line-height: 20px;
+        position: absolute;
+        
+        text-align: justify;
+        bottom: 0;
+        margin: 0;
+        height: 30px;
+        transition: height .5s;
+        -webkit-transition: height .5s;
+        -moz-transition: height .5s;
+      
+    
+    }
+    
+    .mobile{
+        background-image: url(http://images.en.yibada.com/data/thumbs/full/130710/685/0/0/0/really-blue-google-pixel-pixel-xl.jpg);
+
+    }
+    .earphone{
+       background-image: url(http://shop.sennheiserindia.com/media/wysiwyg/730pixel-X-300pixel.jpg)
+    }
+    .drone{
+        background-image: url(https://i1.wp.com/uavcoach.com/wp-content/uploads/2016/04/DJI-Phantom-3-Professional.png?resize=578%2C271)
+    }
+    .watch{
+        background-image: url(https://www.idafrica.ng/wp-content/uploads/2015/07/screen-shot-2015-01-28-at-1-02-57-pm.png)
+    }
+    input{
+        float: right;
+    }
+    
+    .price{
+        float: right; 
+        color:cornsilk;
+        font-size: 23px;
+        }
+    
+    small {
+        opacity: 0;
+    }
+
+    .show-description p {
+        height: 150px;
+    }
+
+    .show-description small {
+        opacity: 1;
+    }
+ 
+    footer {
+        margin-top: 40px;
+        color: bisque;
+    }
+        
+@media (max-width: 500px) {
+  header{
+    background-size: cover;
+    padding:0px;
+    }
+  h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  
+  div {
+    margin: 20px 12px 0 12px;
+  }
+    input{
+        float: left;
+        margin-top: 2px;
+    }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+ 
+}
+
+</style>
+</head>
+
+<body>
+<header><h1>Gazmo</h1>
+<h2>Your Gadgets Corner</h2>
+    
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">New Tech</a></li>
+    
+        <input type="text" name="search" placeholder="Search..">
+    </ul>
+    
+</header>
+    
+<div class="mobile">
+    <p class="">Google Pixel <span class="price">Rs.40000</span><br>
+        <small>
+Resolution 1080x1920 pixels, RAM 4GB, Android 7.1, 12.3-megapixel Camera, Battery Capacity 2770mAh
+        </small>
+    </p>
+</div>
+    
+<div class="earphone">
+    <p>Sennheiser Earphones <span class="price">Rs.990</span><br>
+        <small>Incredible sound quality at an unbelievable price. Very durable, excellent build quality and  comes with one year warranty. </small>
+    
+    </p>
+    </div>
+    
+    <div class="drone">
+        <p> Drone<span class="price">Rs.7199</span> <br>
+            <small> A flying drone with a gopro camera to record videoos and click pictures. it is remotely controlled and has 2 year warranty.
+            </small>
+        </p>
+</div>
+    <div class="watch">
+        <p> Apple watch<span class="price">Rs. 24449</span><br>
+            <small>
+             Now keep track of all your notifications with the new apple watch. With this watch you can keep track of your fitness, run many apps available on the watch os and also can connect to different devices
+            </small>
+        
+        
+        </p>
+    
+    </div>
+
+<script> $('div').on('click', function() { $(this).toggleClass('show-description'); }); </script>
+    
+<footer>contact us<br>
+    about<br>
+    policies
+    </footer>
+
+</body>
